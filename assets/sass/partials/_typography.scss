@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Titillium";
+  src: url(.././fonts/TitilliumWeb-Regular.ttf);
+}
+@font-face {
+  font-family: "Billabong";
+  src: url(.././fonts/Billabong.ttf);
+}
+
+h1,
+h2,
+h4,
+h5,
+h6,
+h3,
+p,
+button,
+small,
+ul *,
+input,
+textarea,
+a {
+  font-family: "Titillium" !important;
+}
+p,
+a,
+input,
+textarea {
+  font-size: 18px;
+}

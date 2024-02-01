@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Zone</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <header class="py-5">
+      <div
+        class="container base-navbar d-flex align-items-center justify-content-between"
+      >
+        <a href="#" class="navbar-logo">
+          <h3>
+            Movie <span><b>Zone</b></span>
+          </h3>
+        </a>
+        <div class="d-flex align-items-center" id="mainNavContent">
+          <form action="" id="searchForm">
+            <div class="form-group">
+              <div class="search-input-wrapper d-flex align-items-center">
+                <i class="fa fa-search icon"></i>
+                <input
+                  type="search"
+                  autocomplete="off"
+                  placeholder="Search Any movie here.."
+                  class="form-control"
+                  name="searchMovie"
+                  id="searchMovie"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="nav-links-toggler" id="navbarToggler">
+            <i class="fa fa-bars text-white"></i>
+          </div>
+        </div>
+        <div id="links-nav" class="nav-links d-flex align-items-center">
+          <!-- <ul class="d-flex list-unstyled m-0">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Movies</a></li>
+                </ul> -->
+          <div class="auth-wrappper" id="desktop-auth-wrapper">
+            <img src="assets/src/profile.jpg" alt="" />
+            <div class="active-status"></div>
+            <div class="nav-profile-links" id="desktop-profile-links">
+              <p class="m-0">Hello <b>@Sanele Gcina</b></p>
+              <hr />
+              <div class="menu-links">
+                <a href="#"
+                  >My Profile <i class="fa fa-user-circle btn-icon"></i
+                ></a>
+                <a href="#">Settings <i class="fa fa-cogs btn-icon"></i></a>
+              </div>
+              <form action="">
+                <button type="submit" class="btn btn-primary w-100">
+                  Log out <i class="fa fa-sign-out-alt btn-icon"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <!-- <div class="mx-2"></div>
+                <a href="#" class="btn btn-primary">Log in <i class="fa fa-sign-in-alt btn-icon"></i></a> -->
+        </div>
+      </div>
+    </header>
+    <div class="mobile_navbar py-3" id="mobileNavBar">
+      <div class="container d-flex align-items-center justify-content-between">
+        <ul class="list-unstyled m-0">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Movies</a></li>
+        </ul>
+        <div class="auth-wrappper" id="mobile-auth-wrapper">
+          <img src="assets/src/profile.jpg" alt="" />
+          <div class="active-status"></div>
+        </div>
+
+        <!-- <a href="#" class="mobile-btn btn btn-primary"
+          >Log in <i class="fa fa-sign-in-alt btn-icon"></i
+        ></a> -->
+      </div>
+      <div class="nav-profile-links" id="mobile-auth-menu">
+        <hr />
+        <div class="container">
+          <p class="m-0 text-white">Hello <b>@Sanele Gcina</b></p>
+          <hr />
+          <div class="line-wrapper line-main">
+            <div class="menu-links-mobile">
+              <a href="#"
+                >My Profile <i class="fa fa-user-circle btn-icon"></i
+              ></a>
+              <a href="#">Settings <i class="fa fa-cogs btn-icon"></i></a>
+            </div>
+          </div>
+          <form action="">
+            <button type="submit" class="btn btn-primary">
+              Log out <i class="fa fa-sign-out-alt btn-icon"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <section class="hero__section">
+      <img src="" alt="" id="slider" class="hero-image" />
+      <div class="cover-content">
+        <div class="container py-5">
+          <h1 class="hero-title">
+            Movie <span><b>Zone</b></span>
+          </h1>
+          <p class="mt-2 hero_subtitle">
+            Best free online streaming & downloads platform.
+          </p>
+          <div class="line-wrapper">
+            <!--Movie Card-->
+            <h1 class="hero-heading">New Jam !</h1>
+            <div class="card-wrapper">
+              <div class="movie-card">
+                <img class="card_img" src="assets/src/new-jam.jpg" alt="" />
+                <div class="card-cover">
+                  <div class="card-details">
+                    <p class="movie-title m-0">Chucky (2024)</p>
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-dark mt-2"
+                      >Watch <i class="fa fa-play-circle btn-icon"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Movie Card ends-->
+            <div class="hero_bottom_content mt-2">
+              <p class="text-white">
+                To save your favourite movies for the future, please sign up
+                now.
+              </p>
+              <a href="#" class="btn btn-secondary btn-border"
+                >Sign up <i class="fa fa-check-circle btn-icon"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Body Sections -->
+    <!--Trending Movies-->
+    <section class="trending_movies">
+      <div class="container">
+        <div class="line-wrapper line-main">
+          <h3 class="section-heading">Trending Movies</h3>
+        </div>
+        <p class="section-subtitle">
+          Check out all the trending movies of the week.
+        </p>
+        <div class="section-content">
+          <div class="trending-grid">
+            <div class="custom-card" id="1">
+              <img src="assets/src/movies/brave.jpg" alt="" />
+              <div class="custom-card-cover">
+                <div class="custom-actions">
+                  <div class="actions movie-card-action">
+                    <div class="line-wrapper">
+                      <p class="movie-title m-0">Brave</p>
+                      <a href="#" class="btn mt-2 btn-light"
+                        >See More <i class="fa fa-eye btn-icon"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="custom-card" id="2">
+              <img src="assets/src/new-jam.jpg" alt="" />
+              <div class="custom-card-cover">
+                <div class="custom-actions">
+                  <div class="actions movie-card-action">
+                    <div class="line-wrapper">
+                      <p class="movie-title m-0">Chucky</p>
+                      <a href="#" class="btn mt-2 btn-light"
+                        >See More <i class="fa fa-eye btn-icon"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="custom-card" id="3">
+              <img src="assets/src/movies/john-wick.jpg" alt="" />
+              <div class="custom-card-cover">
+                <div class="custom-actions">
+                  <div class="actions movie-card-action">
+                    <div class="line-wrapper">
+                      <p class="movie-title m-0">John Wick</p>
+                      <a href="#" class="btn mt-2 btn-light"
+                        >See More <i class="fa fa-eye btn-icon"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="custom-card" id="4">
+              <img src="assets/src/movies/luca.jpeg" alt="" />
+              <div class="custom-card-cover">
+                <div class="custom-actions">
+                  <div class="actions movie-card-action">
+                    <div class="line-wrapper">
+                      <p class="movie-title m-0">Luca</p>
+                      <a href="#" class="btn mt-2 btn-light"
+                        >See More <i class="fa fa-eye btn-icon"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Movie News-->
+    <section class="movies_news">
+      <div class="container">
+        <div class="line-wrapper line-main">
+          <h3 class="section-heading">News</h3>
+        </div>
+        <p class="section-subtitle">
+          Movie Zone keeps you updated with movie release dates and latest
+          releases, stay alert.
+        </p>
+        <div class="section-content">
+          <div class="movie-news-grid">
+            <div class="movie-news-news">
+              <h3 class="news-title">
+                Dracula Untold (2024) is set to be released soon.
+              </h3>
+              <p class="news-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                repellendus impedit, consectetur repellat sapiente dolor,
+                placeat reiciendis ab tempora non ipsa sed, illo vero quos ea
+                numquam ipsam molestiae voluptates. Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Iusto iure ab laudantium
+                consequatur dignissimos consequuntur ea, quas architecto dolorem
+                reiciendis harum doloribus voluptate consectetur aperiam sit
+                tenetur maxime, cumque est.
+              </p>
+              <div class="movies-tags">
+                <span class="tag">Action</span>
+                <span class="tag">Thriller</span>
+                <span class="tag">Drama</span>
+              </div>
+              <div class="news-nav-bottom">
+                <p class="text-muted news-content">
+                  <i class="fa fa-calendar-alt icon-left"></i> Posted on 03 Jan
+                  2024
+                </p>
+              </div>
+            </div>
+            <div class="movie-news-image">
+              <div class="movie-news-image-wrapper">
+                <img src="assets/src/movies/dracula-untold.webp" alt="" />
+              </div>
+            </div>
+          </div>
+          <hr />
+          <a href="#" class="btn-primary btn"
+            >See More <i class="fa fa-chevron-right btn-icon"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- Body Sections Ends -->
+    <!-- Footer -->
+    <section class="footer_section py-4">
+      <footer>
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-col">
+              <h3>Movie <span>Zone</span></h3>
+              <p><b>Useful Links</b></p>
+              <ul class="list-unstyled d-flex m-0">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <p><b>Join</b> our mailing list for future communication.</p>
+              <form action="" class="custom-input-grid">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    autocomplete="off"
+                    class="form-control"
+                    name="fullname"
+                    id="fullname"
+                    placeholder="John Doe"
+                  />
+                </div>
+                <div>
+                  <button class="btn w-100 btn-secondary" type="submit">
+                    Join <i class="fa fa-plus-circle btn-icon"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <hr />
+          <p class="text-dark mt-3 text-center m-0">
+            All Right Reserved &copy; <span id="year"></span> -
+            <b>Carl Technologies</b>
+          </p>
+        </div>
+      </footer>
+    </section>
+  </body>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</html>

@@ -1,0 +1,16 @@
+@mixin imageFit() {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@mixin roundedWrapper($width, $height) {
+  width: $width + px;
+  height: $height + px;
+  border-radius: 50%;
+}
+
+@mixin circular() {
+  border-radius: 50%;
+}

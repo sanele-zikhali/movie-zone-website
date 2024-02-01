@@ -1,0 +1,53 @@
+@import "colors";
+
+.footer_section {
+  background: $light;
+
+  footer {
+    .container {
+      .footer-col:first-child {
+        h3 span {
+          color: $primary;
+          font-weight: bolder;
+        }
+
+        ul {
+          li:not(:last-child) {
+            margin-right: 8px;
+          }
+          li a {
+            color: $primary;
+            text-decoration: none;
+            position: relative;
+            transition: 0.3s all ease-in-out;
+
+            &:hover {
+              font-weight: bolder;
+            }
+
+            &::before {
+              content: "";
+              width: 0%;
+              height: 2px;
+              background: $primary;
+              position: absolute;
+              bottom: -12%;
+              left: 50%;
+              transform: translateX(-50%);
+              transition: 0.3s all ease-in-out;
+            }
+            &:hover::before {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .footer-grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 3fr 2fr;
+      }
+    }
+  }
+}

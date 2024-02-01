@@ -1,0 +1,32 @@
+@import "colors";
+
+input {
+  min-width: 320px !important;
+}
+
+.btn:active {
+  transform: scale(98%);
+}
+.btn {
+  transition: 0.3s all ease-in-out;
+}
+.btn,
+.form-control {
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  border-color: $border-color !important;
+}
+
+.form-control {
+  &:focus {
+    border-color: $primary !important;
+  }
+}
+.btn-primary {
+  background: $primary !important;
+  border-color: darken($primary, 2) !important;
+}
+.btn-secondary {
+  background: $navy !important;
+  border-color: darken($navy, 2) !important;
+}

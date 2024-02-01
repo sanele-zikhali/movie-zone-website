@@ -1,0 +1,117 @@
+@import "colors";
+@import "mixins";
+
+header {
+  a.navbar-logo {
+    text-decoration: none;
+    color: $white;
+
+    span {
+      color: $primary;
+    }
+  }
+
+  .auth-wrappper {
+    .nav-profile-links {
+      background: $light;
+      margin-top: 10px;
+      position: absolute;
+      right: 0%;
+      min-width: 300px;
+      padding: 20px;
+      display: none;
+      z-index: 7000 !important;
+      transition: 0.3s all ease-in-out;
+
+      .menu-links {
+        a {
+          display: flex;
+          background: #dadada;
+          text-decoration: none;
+          color: $navy;
+          padding: 6px 10px;
+          margin-bottom: 4px;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 18px;
+          border: 1px solid #c0c0c0;
+          font-size: 16px !important;
+          transition: 0.3s all ease-in-out;
+
+          &:hover {
+            border-color: $navy;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-links-toggler {
+    cursor: pointer;
+    display: none;
+    margin-left: 14px;
+  }
+  #searchForm {
+    input[type="search"] {
+      background: transparent !important;
+      color: $light !important;
+    }
+    ::placeholder {
+      color: $placeholder;
+    }
+    .icon {
+      color: $white;
+      margin-right: 10px;
+      font-size: 18px;
+    }
+  }
+  ul {
+    li {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $white !important;
+        transition: 0.3s all ease-in-out;
+
+        &:hover {
+          color: $placeholder !important;
+        }
+      }
+    }
+  }
+}
+
+.auth-wrappper {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border: 2px solid $light;
+  border-radius: 50%;
+  margin-left: 30px;
+  cursor: pointer;
+  z-index: 7000 !important;
+
+  img {
+    @include imageFit();
+    @include circular();
+  }
+  .active-status {
+    @include roundedWrapper(15, 15);
+    background: $success;
+    position: absolute;
+    top: 80%;
+    border: 2px solid $navy;
+  }
+}
+
+.show-profile-links {
+  display: block !important;
+}
+
+#mobile-auth-menu {
+  display: none;
+  transition: 0.3s all ease-in-out;
+}
